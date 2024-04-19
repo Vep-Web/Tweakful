@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>Tweakful</title>
+
+  <link
+    rel="preload"
+    href="fonts/InterItalic.woff2"
+    as="font"
+    type="font/woff2"
+  />
+  <link
+    rel="preload"
+    href="fonts/InterRegular.woff2"
+    as="font"
+    type="font/woff2"
+  />
+  <link
+    rel="preload"
+    href="fonts/InterMedium.woff2"
+    as="font"
+    type="font/woff2"
+  />
+  <link
+    rel="preload"
+    href="fonts/InterSemiBold.woff2"
+    as="font"
+    type="font/woff2"
+  />
+  <link
+    rel="preload"
+    href="fonts/InterBold.woff2"
+    as="font"
+    type="font/woff2"
+  />
+  <link
+    rel="preload"
+    href="fonts/LeifaExtraBold.woff2"
+    as="font"
+    type="font/woff2"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page">
+  <div style="display: none">
+  <svg
+    viewBox="0 0 158 44"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+  >
+    <style>
+      :root > svg {
+        display: none;
+      }
+      :root > svg:target {
+        display: block;
+      }
+    </style>
+    <svg viewBox="0 0 158 31" id="amazon" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M11.775 18.003a.653.653 0 00.748-.074l.008.007c.631-.566 1.781-1.57 2.428-2.115.258-.211.212-.556.01-.845l-.185-.254c-.518-.7-1.01-1.364-1.01-2.697v-4.96l.002-.509c.011-1.904.021-3.64-1.394-4.97C11.167.413 9.152 0 7.612 0 4.6 0 1.237 1.131.532 4.875c-.075.398.213.607.472.665l3.07.334c.286-.014.494-.298.55-.585C4.886 4 5.96 3.377 7.167 3.377c.652 0 1.393.242 1.778.827.398.587.391 1.367.386 2.068l-.002.241v.414c-.285.032-.583.062-.89.094-1.674.17-3.612.368-5.063 1.009C1.392 8.89 0 10.649 0 13.233c0 3.308 2.073 4.963 4.74 4.963 2.25 0 3.482-.535 5.22-2.315.088.128.167.246.24.357.413.615.684 1.02 1.575 1.765zM9.33 10.33v-.852c-2.29 0-4.71.493-4.71 3.205 0 1.378.712 2.309 1.926 2.309.889 0 1.689-.551 2.192-1.447.595-1.055.594-2.046.592-3.215zm44.703 7.6a.653.653 0 01-.748.074c-.892-.745-1.163-1.15-1.575-1.766l-.24-.356c-1.739 1.78-2.97 2.315-5.22 2.315-2.667 0-4.74-1.655-4.74-4.963 0-2.584 1.392-4.342 3.376-5.203 1.452-.641 3.39-.839 5.064-1.01.307-.03.605-.061.89-.093v-.414l.002-.24c.005-.701.012-1.482-.387-2.069-.385-.585-1.125-.827-1.777-.827-1.208 0-2.281.623-2.545 1.912-.055.287-.263.571-.55.585l-3.07-.334c-.258-.058-.546-.267-.472-.665C42.747 1.131 46.11 0 49.123 0c1.54 0 3.554.414 4.768 1.585 1.416 1.33 1.405 3.067 1.394 4.97l-.002.51v4.96c0 1.332.492 1.997 1.01 2.696.061.084.124.168.186.255.202.29.248.634-.01.845a138.71 138.71 0 00-2.429 2.115l-.007-.007zm-3.193-7.763v.161c.002 1.17.003 2.162-.592 3.217-.504.896-1.303 1.447-2.192 1.447-1.215 0-1.925-.93-1.925-2.309 0-2.712 2.419-3.205 4.71-3.205v.69zm86.41 7.22c0 .32.262.578.591.588h1.385a.596.596 0 00.568-.587l.001-9.419c0-1.444.148-2.854.916-3.989.597-.893 1.606-1.66 2.603-1.716.961.051 1.879.693 2.389 1.682.444.86.503 1.994.503 2.957l.006 10.485c0 .32.263.577.592.587h1.383a.602.602 0 00.564-.501V8.39c-.001-1.572-.002-2.807.827-4.17.656-1.095 1.67-1.901 2.776-1.957.99.05 1.91.728 2.393 1.82.426.96.421 2.06.415 3.122v.004l-.001.347v9.91c.04.283.286.499.585.508h1.391a.597.597 0 00.569-.587V7.376c.001-1.577.003-3.415-.709-4.806-.769-1.513-2.247-2.51-3.783-2.51l-.127.001-.113-.001c-2.174 0-3.823 1.56-4.697 3.756-.562-2.225-2.073-3.756-4.137-3.756l-.118.001-.121-.001c-1.947 0-3.487 1.479-4.313 3.367V1.044a.601.601 0 00-.609-.538h-1.162a.597.597 0 00-.567.538v16.343zm-119.245.584h3.166a.599.599 0 00.61-.588l.002-8.662v-.205c-.003-1.87-.007-4.3 2.187-4.3 2.019 0 1.985 2.166 1.957 3.928v.001c-.003.199-.006.392-.006.576l.003 8.663c0 .313.251.566.569.587h3.162a.6.6 0 00.611-.588v-8.88c-.002-.915-.005-2.149.296-2.912.325-.825 1.123-1.341 1.891-1.341.917 0 1.626.31 1.862 1.41.12.528.104 1.751.094 2.565v.001c-.003.193-.005.362-.005.494v8.663c0 .313.252.566.57.587h3.162c.337 0 .61-.262.61-.588L38.75 7.07c0-.253.005-.511.01-.771.025-1.546.052-3.176-.808-4.353C37.064.708 35.616.158 34.286.158c-1.862 0-3.606.963-4.375 3.026-.886-2.063-2.128-3.026-4.108-3.026-1.95 0-3.399.963-4.168 3.026h-.059V1.051A.598.598 0 0021 .502h-2.948a.599.599 0 00-.611.589l-.003 16.34a.599.599 0 00.567.539zM59.137 3.386V1.051a.575.575 0 01.59-.591L70.133.459c.333 0 .6.243.6.59V3.05c-.002.336-.284.774-.784 1.47l-5.39 7.74c2-.047 4.117.253 5.936 1.281.41.232.52.575.552.912v2.49c0 .344-.374.742-.766.535-3.204-1.687-7.455-1.872-10.997.02-.362.194-.741-.197-.741-.54v-2.37c0-.378.007-1.026.387-1.604l6.246-9.01-5.438-.001a.58.58 0 01-.602-.588zm-.124 17.783c1.921-.23 6.172-.742 6.932.235.76.979-.844 5.007-1.562 6.811l-.002.004c-.217.545.25.765.74.352 3.19-2.682 4.013-8.302 3.36-9.114-.648-.804-6.223-1.498-9.626.905-.523.37-.433.879.147.809l.011-.002zM41.488 31c7.42 0 16.038-2.346 21.983-6.757.983-.73.14-1.824-.864-1.395-6.664 2.841-13.907 4.216-20.495 4.216-9.767 0-19.223-2.694-26.87-7.169-.668-.391-1.164.3-.608.804C21.722 27.135 31.087 31 41.488 31zM79.724 3.493c-2.335 0-2.483 3.198-2.483 5.193v.069c0 2.022-.001 6.19 2.454 6.19 2.453 0 2.57-3.44 2.57-5.537 0-1.375-.058-3.026-.472-4.333-.355-1.135-1.064-1.582-2.069-1.582zm-.03-3.335c4.7 0 7.242 4.058 7.242 9.216 0 4.985-2.807 8.94-7.242 8.94-4.61 0-7.123-4.058-7.123-9.112 0-5.09 2.542-9.044 7.124-9.044zM89.877 17.97h3.155a.608.608 0 00.616-.588v-8.8c0-1.1.06-2.097.503-3.094.354-.79 1.064-1.307 1.832-1.307 2.018 0 1.999 2.223 1.984 3.972v.002l-.003.428v8.872c.034.28.27.496.564.515h3.174a.602.602 0 00.607-.515V7.173c0-1.582 0-3.783-.828-5.09-.886-1.41-2.276-1.925-3.695-1.925-2.187 0-3.428 1.066-4.315 3.301h-.06v-2.5a.602.602 0 00-.562-.457h-2.937a.6.6 0 00-.608.534l.005 16.347c0 .313.25.566.568.587zm14.417-1.297c0-.822.698-1.489 1.559-1.489s1.558.667 1.558 1.49c0 .821-.697 1.488-1.558 1.488-.861 0-1.559-.667-1.559-1.489zm24.337-.592c1.478-.049 2.644-.97 3.334-2.508.62-1.375.739-2.957.739-4.47 0-1.65-.178-3.37-.946-4.78-.688-1.233-1.875-2.014-3.132-2.06-1.4.05-2.647 1.002-3.279 2.473-.561 1.272-.739 2.957-.739 4.367 0 1.582.207 3.404.858 4.78.631 1.302 1.849 2.151 3.165 2.198zm-.331 2.237c-4.493 0-6.502-4.608-6.502-9.215 0-4.849 2.364-9.043 6.886-9.043h.239c4.405 0 6.592 4.47 6.592 9.077 0 4.883-2.424 9.181-6.976 9.181l-.116-.001-.123.001zm-10.525-6.101c-.439 2.107-1.498 3.732-3.515 3.795-3.035-.1-3.755-4.16-3.755-6.944 0-2.884.863-6.64 3.898-6.737 1.906.063 3.049 1.655 3.386 3.656.044.282.236.536.526.578l1.398.016c.291-.034.54-.267.54-.536-.48-3.586-2.691-5.985-5.788-5.985h-.239c-4.463 0-6.414 4.641-6.414 9.18 0 4.574 1.921 9.078 6.385 9.078l.115-.001.124.001c3.066 0 5.218-2.435 5.834-6.018.023-.295-.266-.537-.58-.554l-1.334.006c-.294 0-.495.202-.581.465z"
+      /></svg
+    ><svg viewBox="0 0 93 12" id="atlassian" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M5.482.2a.305.305 0 01.41.135l5.244 10.433a.53.53 0 01.03.15.336.336 0 01-.28.328l-.053.004H7.028a.33.33 0 01-.26-.137l-.028-.044-1.834-3.643A7.152 7.152 0 015.218.528L5.33.35A.362.362 0 015.482.2zm48.731 1.722l.165-.002a6.27 6.27 0 012.777.556l.202.095v2.224c-.968-.476-1.996-.81-3.038-.81-.864 0-1.326.238-1.326.794 0 .413.304.723 1.483 1.015l.14.034c2.31.527 3.16 1.295 3.201 2.894l.001.115-6.94-4.058v.026l-.044-.026c0-1.737 1.15-2.807 3.38-2.857zm-3.335 2.883l.001.077c.03 1.366.669 2.452 3.023 2.948l.145.032c1.32.303 1.597.557 1.597 1.048 0 .493-.298.826-1.31.826a6.915 6.915 0 01-3.5-1.017v2.304l.088.046c.719.369 1.666.764 3.382.764l.169-.002c2.393-.053 3.36-1.245 3.36-2.984l-.015-.01v.01l-6.94-4.042zm12.404-2.884l.174-.001a7.223 7.223 0 012.995.556l.218.095v2.224c-1.044-.476-2.153-.81-3.278-.81-.932 0-1.43.238-1.43.794 0 .414.329.724 1.606 1.017l.146.032c2.554.54 3.454 1.334 3.454 3.019 0 1.779-1.077 2.97-3.84 2.986-1.854 0-2.876-.396-3.652-.766l-.091-.044V8.72a7.89 7.89 0 003.775 1.017c1.093 0 1.414-.333 1.414-.826 0-.491-.3-.745-1.728-1.049l-.152-.031c-2.603-.509-3.261-1.637-3.261-3.05 0-1.739 1.241-2.81 3.65-2.859zM3.276 5.535a.309.309 0 00-.426-.058.225.225 0 00-.089.116l-2.646 5.21-.02.053a.304.304 0 00.167.365.427.427 0 00.147.029h3.69l.05-.004c.1-.014.192-.07.23-.17.78-1.615.294-4.069-1.103-5.54zm86.221.655l-2.274-4.273h-3.14v9.333h1.996V4.138l.835 1.882 2.83 5.23h2.506V1.917h-1.995v6.032l-.758-1.759zM71.25 1.917v9.333h-2.333V1.917h2.333zM36.142 9.229V1.917h-2.225v9.333h4.545l.705-2.02h-3.025zm-3.975-7.312v2.02h-2.509v7.313h-2.133V3.938h-2.358V1.917h7zm-7 9.333l-3.24-9.333h-2.854l-3.24 9.333h2.472l.46-1.574.214.06a6.036 6.036 0 003.256-.06l.46 1.574h2.472zm20.677-9.333l3.24 9.333h-2.472l-.46-1.574a6.036 6.036 0 01-3.256.06l-.214-.06-.46 1.574H39.75l3.24-9.333h2.854zm36.49 9.333l-3.24-9.333H76.24L73 11.25h2.472l.46-1.574.214.06a6.036 6.036 0 003.255-.06l.461 1.574h2.472zM19.303 7.825L20.5 3.753l1.198 4.072-.2.056a4.136 4.136 0 01-.998.114c-.399 0-.798-.062-1.197-.17zm25.114-4.072l-1.198 4.072c.4.108.799.17 1.198.17.332 0 .665-.032.998-.114l.2-.056-1.198-4.072zm32.052 4.072l1.198-4.072 1.197 4.072-.2.056a4.136 4.136 0 01-.997.114c-.4 0-.798-.062-1.198-.17z"
+      /></svg
+    ><svg viewBox="0 0 142 29" id="facebook" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M13.284 4.8V.502H9.598S7.064.35 5.145 2.114c-1.92 1.765-1.46 3.913-1.46 3.913v3.912H0v4.604h3.532V27.66h5.222V14.602h3.993l.537-4.663h-4.53V6.564c0-2.072 2.15-1.765 2.15-1.765h2.38zm8.928 19.293c1.867 0 3.38-1.673 3.38-3.452v-3.375c0-1.78-1.513-3.452-3.38-3.452-1.868 0-3.382 1.672-3.382 3.452v3.375c0 1.78 1.514 3.452 3.382 3.452zm3.662-11.736v-2.34h5.033V27.66h-5.03l.035-2.276c-1.335 1.781-3.214 2.89-5.295 2.89-4.05 0-7.333-3.605-7.333-9.378 0-5.811 3.283-9.379 7.333-9.379 2.062 0 3.925 1.088 5.257 2.84zm46.398 4.794c0-1.78 1.514-3.453 3.381-3.453 1.868 0 3.382 1.673 3.382 3.453v3.375c0 1.78-1.514 3.452-3.382 3.452-1.867 0-3.381-1.673-3.381-3.452V17.15zm-.281 10.624v-2.34c1.332 1.751 3.195 2.84 5.257 2.84 4.05 0 7.333-3.568 7.333-9.38 0-5.772-3.283-9.378-7.333-9.378-2.081 0-3.96 1.11-5.295 2.89L71.988.754l-5.23.588v26.353l5.233.08zM38.24 19.008c0 5.217 4.031 4.987 4.031 4.987 2.726.038 3.686-.92 3.686-.92l1.267 3.797c-2.188 1.61-8.792 1.879-11.748-.844-2.559-2.357-2.558-6.175-2.511-7.162-.047-.987-.048-4.806 2.51-7.162 2.957-2.724 9.56-2.455 11.749-.844l-1.267 3.797s-.96-.959-3.686-.92c0 0-4.031-.23-4.031 4.986v.285zm15.012-1.82s-.27-3.912 3.263-3.912c3.532 0 3.264 3.913 3.264 3.913h-6.527zm11.326 3.568s2.111-11.047-7.986-11.107c-10.098-.06-8.639 9.995-8.639 9.995.23 6.098 3.033 7.863 7.833 8.438 4.799.576 8.446-1.265 8.446-1.265l-1.113-3.568s-3.878 1.19-6.95.92c-3.07-.268-2.84-3.413-2.84-3.413h11.249zM94.94 24c1.917 0 3.47-1.673 3.47-3.452v-3.376c0-1.78-1.553-3.452-3.47-3.452-1.916 0-3.47 1.673-3.47 3.452v3.376c0 1.78 1.554 3.452 3.47 3.452zm-8.74-4.984c0-5.296 2.212-9.258 8.785-9.258 6.276 0 8.786 4.145 8.786 9.258 0 6.001-3.933 9.258-8.786 9.258-5.934 0-8.785-3.64-8.785-9.258zm31.611 1.532c0 1.78-1.554 3.452-3.47 3.452-1.916 0-3.47-1.673-3.47-3.452v-3.376c0-1.78 1.554-3.452 3.47-3.452 1.916 0 3.47 1.673 3.47 3.452v3.376zm-3.425-10.79c-6.574 0-8.786 3.962-8.786 9.258 0 5.619 2.851 9.258 8.786 9.258 4.852 0 8.785-3.257 8.785-9.258 0-5.113-2.51-9.258-8.785-9.258zm21.463 9.096l5.744 8.883h-5.446l-5.786-9.037v9.037h-5.275V1.215l5.275-.553v17.26l5.361-7.952h5.616l-5.489 8.884z"
+      /></svg
+    ><svg viewBox="0 0 44 44" id="feature-1" xmlns="http://www.w3.org/2000/svg">
+      <path opacity=".01" d="M0 0h44v44H0z" />
+      <path
+        d="M16.5 5.5H9.167A3.667 3.667 0 005.5 9.167V16.5a3.667 3.667 0 003.667 3.667H16.5a3.667 3.667 0 003.667-3.667V9.167A3.667 3.667 0 0016.5 5.5zm18.333 0H27.5a3.667 3.667 0 00-3.667 3.667V16.5a3.667 3.667 0 003.667 3.667h7.333A3.667 3.667 0 0038.5 16.5V9.167A3.667 3.667 0 0034.833 5.5zM16.5 23.833H9.167A3.667 3.667 0 005.5 27.5v7.333A3.667 3.667 0 009.167 38.5H16.5a3.667 3.667 0 003.667-3.667V27.5a3.667 3.667 0 00-3.667-3.667zm18.333 0H27.5a3.667 3.667 0 00-3.667 3.667v7.333A3.667 3.667 0 0027.5 38.5h7.333a3.667 3.667 0 003.667-3.667V27.5a3.667 3.667 0 00-3.667-3.667z"
+      /></svg
+    ><svg viewBox="0 0 44 44" id="feature-2" xmlns="http://www.w3.org/2000/svg">
+      <path opacity=".01" d="M44 44H0V0h44z" />
+      <path
+        d="M5.94 13.365l15.62 8.488a.935.935 0 00.88 0l15.62-8.488a.806.806 0 00-.092-1.485L22.348 5.5a.917.917 0 00-.696 0l-15.62 6.38a.807.807 0 00-.092 1.485z"
+      />
+      <path
+        d="M37.968 19.543l-3.355-1.43-12.173 6.619a.935.935 0 01-.88 0L9.387 18.113l-3.355 1.43a.88.88 0 000 1.559l15.62 8.983c.27.165.61.165.88 0l15.62-8.983a.88.88 0 00-.184-1.559z"
+      />
+      <path
+        d="M37.968 27.683l-2.86-1.246L22.44 33.33a.935.935 0 01-.88 0L8.892 26.437l-2.86 1.246a.898.898 0 000 1.595l15.62 9.167a.935.935 0 00.88 0l15.62-9.167a.898.898 0 00-.184-1.595z"
+      /></svg
+    ><svg viewBox="0 0 44 44" id="feature-3" xmlns="http://www.w3.org/2000/svg">
+      <path opacity=".01" d="M0 0h44v44H0z" />
+      <path
+        d="M22 38.5a1.834 1.834 0 01-1.302-.532L6.453 23.705a9.643 9.643 0 010-13.567 9.607 9.607 0 0113.567 0l1.98 1.98 1.98-1.98a9.607 9.607 0 0113.567 0 9.643 9.643 0 010 13.567L23.302 37.968A1.834 1.834 0 0122 38.5z"
+      /></svg
+    ><svg viewBox="0 0 44 44" id="feature-4" xmlns="http://www.w3.org/2000/svg">
+      <path opacity=".01" d="M44 0v44H0V0z" />
+      <path
+        d="M32.193 38.5a1.834 1.834 0 01-.843-.202L22 33.403l-9.35 4.895a1.833 1.833 0 01-2.658-1.943l1.833-10.322L4.272 18.7a1.833 1.833 0 01-.459-1.833 1.833 1.833 0 011.485-1.247l10.45-1.522 4.602-9.405a1.833 1.833 0 013.3 0l4.657 9.387 10.45 1.522a1.833 1.833 0 011.485 1.246 1.833 1.833 0 01-.459 1.834l-7.553 7.333 1.833 10.322a1.833 1.833 0 01-.733 1.833 1.834 1.834 0 01-1.137.33z"
+      /></svg
+    ><svg viewBox="0 0 44 44" id="feature-5" xmlns="http://www.w3.org/2000/svg">
+      <path opacity=".01" d="M0 0h44v44H0z" />
+      <path
+        d="M20.368 42.167a1.833 1.833 0 01-1.815-2.035l1.412-12.999H9.167a1.833 1.833 0 01-1.522-2.86L22.11 2.64a1.833 1.833 0 012.145-.697 1.833 1.833 0 011.192 1.834l-1.412 13.09h10.798a1.833 1.833 0 011.522 2.86L21.89 41.36a1.834 1.834 0 01-1.522.807z"
+      /></svg
+    ><svg viewBox="0 0 44 44" id="feature-6" xmlns="http://www.w3.org/2000/svg">
+      <path opacity=".01" d="M0 0h44v44H0z" />
+      <path
+        d="M22 40.058a3.666 3.666 0 01-1.833-.458l-.55-.312A27.812 27.812 0 015.5 15.088v-.256a3.667 3.667 0 011.833-3.209L20.167 4.4a3.667 3.667 0 013.666 0l12.834 7.223a3.667 3.667 0 011.833 3.209v.256a27.812 27.812 0 01-14.153 24.2l-.55.312a3.668 3.668 0 01-1.797.458z"
+      /></svg
+    ><svg viewBox="0 0 95 31" id="google" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M23.503 12.78l-.002.067h.003c0-.137 0-.114-.001-.068zm-.002.067c0 .02-.001.027-.002 0h-.002c0 3.49-1.164 6.278-3.167 8.225-2.002 1.945-4.798 3.004-8.07 3.038a9.516 9.516 0 00-.16.005l.071.001a12.072 12.072 0 01-8.63-3.533A12.01 12.01 0 010 12.056c0-3.327 1.35-6.34 3.54-8.524A12.077 12.077 0 0112.1 0c1.576 0 3.083.3 4.468.843a12.17 12.17 0 013.845 2.429l-2.364 2.494A8.693 8.693 0 0012.1 3.433c-2.399 0-4.558.96-6.115 2.512a8.593 8.593 0 00-2.527 6.11c0 2.392.964 4.554 2.528 6.115a8.619 8.619 0 006.114 2.515c.267 0 .135.003.058.005-.054.001-.08.002.075 0 2.356-.024 4.324-.742 5.68-2.059 1.057-1.028 1.768-2.447 2.029-4.217h-7.747v-3.433h11.283l.018 1.703.003.163h.002zm9.11-1.123c1.242 0 2.365.514 3.177 1.346a4.668 4.668 0 011.315 3.272c0 1.283-.503 2.44-1.315 3.273a4.423 4.423 0 01-6.353 0 4.668 4.668 0 01-1.315-3.273c0-1.283.502-2.44 1.315-3.272a4.423 4.423 0 013.176-1.347zm5.551-.824a7.892 7.892 0 00-5.55-2.264c-2.167 0-4.13.865-5.551 2.264a7.614 7.614 0 00-2.3 5.442c0 2.12.879 4.045 2.3 5.443a7.892 7.892 0 005.55 2.263 7.891 7.891 0 005.551-2.263 7.613 7.613 0 002.3-5.443c0-2.12-.879-4.045-2.3-5.442zm14.51 2.17a4.423 4.423 0 00-3.177-1.347 4.423 4.423 0 00-3.176 1.347 4.67 4.67 0 00-1.316 3.272c0 1.283.503 2.44 1.316 3.273a4.423 4.423 0 006.352 0 4.668 4.668 0 001.316-3.273c0-1.283-.503-2.44-1.316-3.272zm-3.177-4.434a7.89 7.89 0 015.551 2.264 7.614 7.614 0 012.3 5.442c0 2.12-.88 4.045-2.3 5.443a7.892 7.892 0 01-5.55 2.263 7.892 7.892 0 01-5.552-2.263 7.614 7.614 0 01-2.3-5.443c0-2.12.88-4.045 2.3-5.442a7.893 7.893 0 015.551-2.264zm16.75 3.088c1.182 0 2.252.514 3.025 1.346.774.832 1.253 1.99 1.253 3.272 0 1.283-.479 2.44-1.253 3.273-.773.832-1.843 1.43-3.025 1.43-2.518 0-4.279-2.11-4.279-4.703 0-1.283.479-2.44 1.253-3.272.773-.832 1.843-1.347 3.026-1.347zm3.953-1.312c-1.152-1.109-2.433-1.776-4.547-1.776-3.54 0-7.102 3.423-7.102 7.706 0 2.12.795 4.045 2.08 5.443 1.287 1.398 3.39 2.263 5.35 2.263 1.723 0 3.05-.668 4.22-1.78v1.688c0 2.5-2.068 4.016-3.716 4.016-2.326 0-3.57-.943-4.403-2.774l-2.944 1.317c.702 1.541 1.724 2.636 2.923 3.368 1.347.823 2.889 1.117 4.424 1.117 1.681 0 3.38-.704 4.643-1.82 1.313-1.159 2.282-3.38 2.282-5.427V9.07h-3.21v1.341zm5.285 13.195h3.314V.992h-3.314v22.615zm16.345-4.688c-1.742 2.883-6.34 2.848-7.644-.237 2.008-.803 4.01-1.615 6.013-2.428 1.49-.604 2.978-1.208 4.47-1.808-1.157-2.96-2.74-4.662-4.69-5.365-3.001-1.083-5.912-.074-7.798 1.911-2.313 2.433-3.027 7.565.31 10.91 1.366 1.368 3.194 2.213 5.465 2.21 2.55-.013 4.892-1.108 6.499-3.447l-2.625-1.746zm-1.113-5.668l-7.058 2.822c-.104-1.484.7-2.797 1.617-3.566 2.385-1.616 4.195-.846 5.441.744z"
+      /></svg
+    ><svg viewBox="0 0 142 37" id="linkedin" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M139.132.249h-30.618c-1.463 0-2.652 1.157-2.652 2.583v30.68c0 1.426 1.189 2.585 2.652 2.585h30.618c1.466 0 2.66-1.159 2.66-2.586V2.831c0-1.425-1.194-2.582-2.66-2.582zm-25.277 4.935a3.087 3.087 0 013.088 3.082 3.087 3.087 0 01-3.088 3.084 3.087 3.087 0 01-3.091-3.084c0-1.7 1.383-3.082 3.091-3.082zm2.663 25.612h-5.329V13.688h5.329v17.108zm3.343-17.108h5.111v2.338h.071c.712-1.345 2.45-2.763 5.043-2.763 5.396 0 6.392 3.544 6.392 8.15v9.383h-5.325v-8.32c0-1.983-.037-4.535-2.769-4.535-2.773 0-3.199 2.161-3.199 4.392v8.463h-5.324V13.688zM20.916 5.177a3.088 3.088 0 013.09 3.082 3.085 3.085 0 01-3.09 3.08 3.085 3.085 0 01-3.088-3.08 3.087 3.087 0 013.088-3.082zm-2.664 25.612h5.328V13.68h-5.328v17.108zM0 5.55v25.245h15.804v-5.103H5.543V5.55H0zm51.173-.002h-5.325v25.247h5.325v-8.457h.07l5.652 8.457h6.694l-6.84-9.202 6.986-7.92h-6.529l-6.033 6.963V5.549zm-24.647 8.134h5.114v2.339h.07c.71-1.347 2.451-2.764 5.043-2.764 5.399 0 6.393 3.544 6.393 8.149v9.382h-5.327V22.47c0-1.984-.037-4.535-2.772-4.535-2.769 0-3.194 2.162-3.194 4.394v8.46h-5.327V13.683zm45.65 17.547c2.772 0 5.576-1.241 7.28-3.403l-3.728-2.729c-.888 1.205-2.059 2.091-3.8 2.091-2.06 0-3.59-1.31-4.012-3.33h12.358v-1.666c0-5.491-3.122-9.034-8.098-9.034-5.325 0-9.587 3.543-9.587 9.034 0 5.492 4.262 9.037 9.587 9.037zm-.498-14.244c1.92 0 3.305 1.488 3.27 3.26h-7.032c.14-1.666 1.42-3.26 3.762-3.26zm28.857 13.8h-4.902v-2.269h-.07c-.819 1.24-2.877 2.694-5.292 2.694-5.116 0-8.489-3.683-8.489-8.893 0-4.784 2.983-9.178 7.884-9.178 2.203 0 4.263.602 5.47 2.268h.07v-9.86h5.329v25.238zm-9.166-12.968c-2.662 0-4.26 1.773-4.26 4.357 0 2.59 1.598 4.358 4.26 4.358 2.665 0 4.264-1.769 4.264-4.358 0-2.584-1.599-4.357-4.264-4.357z"
+      /></svg
+    ><svg viewBox="0 0 105 31" id="logit" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M52.411 2.153h-3.81v4.66h-2.053v3.362h2.053v11.77h3.81v-11.77h2.084V6.813h-2.084v-4.66zM42.977 0c-1.4 0-2.5 1.092-2.5 2.507 0 1.386 1.1 2.478 2.5 2.478 1.458 0 2.56-1.092 2.56-2.478 0-1.415-1.102-2.507-2.56-2.507zm60.566 6.46a1.14 1.14 0 01-1.161-1.15c0-.62.507-1.122 1.161-1.122.626 0 1.131.502 1.131 1.121 0 .65-.505 1.151-1.131 1.151zm0-2.448c-.743 0-1.338.59-1.338 1.297 0 .738.595 1.328 1.338 1.328.715 0 1.31-.59 1.31-1.328 0-.707-.595-1.297-1.31-1.297zm-44.614 8.79c.506-2.006 2.054-3.127 4.048-3.127 1.994 0 3.482 1.091 3.958 3.127H58.93zm4.136-6.46c-4.582 0-8.065 3.48-8.065 8.111 0 4.572 3.186 7.935 8.125 7.935 2.738 0 5.18-1.003 6.965-2.891l-2.56-2.507c-1.25 1.18-2.59 2.035-4.315 2.035-2.083 0-3.66-1.18-4.196-3.155h11.874v-.915c0-5.162-3.213-8.614-7.828-8.614zm33.721 0c-1.874 0-3.481.707-4.612 1.917V.414h-3.81v21.531h3.81v-8.23c0-2.181 1.399-3.687 3.72-3.687 2.172 0 3.363 1.328 3.363 3.688v8.229h3.81v-8.907c0-4.188-2.65-6.697-6.28-6.697zm6.459-1.062v-.473h.298c.239 0 .328.09.328.237 0 .148-.089.236-.328.236h-.298zm.804-.236c0-.294-.209-.413-.506-.413h-.476v1.356h.178v-.53h.298l.328.53h.207l-.356-.559c.209-.03.327-.148.327-.384zM80.357 10c1.608 0 2.918.826 3.93 1.977l2.648-2.596c-1.487-1.858-3.84-3.039-6.517-3.039-4.613 0-8.245 3.482-8.245 8.023 0 4.543 3.632 8.024 8.245 8.024 2.678 0 5.03-1.18 6.517-3.037l-2.648-2.596c-.983 1.12-2.322 1.975-3.959 1.975-2.44 0-4.316-1.887-4.316-4.366 0-2.478 1.875-4.365 4.346-4.365zM41.102 21.945h3.81V6.813h-3.81v15.132zm-27.56-3.215c-2.441 0-4.376-1.916-4.376-4.395C9.166 11.886 11.1 10 13.542 10c2.47 0 4.405 1.887 4.405 4.365 0 2.479-1.935 4.366-4.405 4.366zm0-12.389c-4.614 0-8.245 3.482-8.245 8.023 0 4.543 3.631 8.024 8.245 8.024 4.613 0 8.243-3.481 8.243-8.024 0-4.541-3.63-8.023-8.243-8.023zM0 21.945h3.81V.414H0v21.531zm31.34-3.215c-2.44 0-4.375-1.916-4.375-4.395C26.965 11.886 28.9 10 31.34 10c2.47 0 4.405 1.887 4.405 4.365 0 2.479-1.935 4.366-4.405 4.366zm8.095-8.907v-3.01h-5.358a8.495 8.495 0 00-2.737-.472c-4.613 0-8.244 3.482-8.244 8.023 0 4.543 3.63 8.024 8.244 8.024 4.613 0 8.244-3.481 8.244-8.024 0-1.533-.417-3.037-1.25-4.158l1.101-.383zm-8.095 17.49c-2.44 0-4.375-1.887-4.375-4.335h-3.869c0 4.543 3.63 8.022 8.244 8.022 4.613 0 8.244-3.48 8.244-8.022h-3.87c0 2.448-1.934 4.336-4.374 4.336z"
+      /></svg
+    ><svg viewBox="0 0 20 10" id="next" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M16.17 6l-2.58 2.59L15 10l5-5-5-5-1.41 1.41L16.17 4H0v2h16.17z"
+      /></svg
+    ><svg viewBox="0 0 8 13" id="next-2" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 12l5-5.5L1 1" /></svg
+    ><svg viewBox="0 0 104 20" id="philips" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M35.227.882h-5.578V8.13h-5.808V.882h-5.58V19.12h5.58v-7.174h5.808v7.174h5.578V.882zm19.41 14.574V.882h-5.58V19.12h10.09l.839-3.663h-5.348zm-15.283 3.663h5.578V.882h-5.578V19.12zm22.62 0h5.577V.882h-5.578V19.12zM95.06 5.535c0-.99.994-1.45 2.598-1.45 1.757 0 3.669.382 4.966.918l-.456-3.969C100.715.73 99.415.5 97.048.5c-4.51 0-7.566 1.775-7.566 5.496 0 6.407 8.714 5.111 8.714 8.087 0 1.143-.843 1.752-2.907 1.752-1.831 0-4.662-.609-6.341-1.448l.612 4.2c1.68.608 3.972.913 5.807.913 4.66 0 8.482-1.527 8.482-6.106 0-6.102-8.79-4.958-8.79-7.859zM79.32 14.77c5.194 0 8.48-2.672 8.48-7.325C87.801 2.33 84.287.5 78.554.5c-2.215 0-4.89.152-6.801.382v18.237h5.58v-4.35h1.988zm2.977-7.249c0 2.365-1.144 3.968-4.049 3.968h-.915V3.954c.324-.02.629-.02.915-.02 2.75.001 4.049 1.297 4.049 3.586zM7.565 14.77c5.196 0 8.48-2.673 8.48-7.326C16.046 2.33 12.53.5 6.802.5 4.584.5 1.909.652 0 .882v18.237h5.577v-4.35h1.988zm2.981-7.25c0 2.365-1.147 3.968-4.05 3.968h-.919V3.954c.327-.02.632-.02.918-.02 2.75.001 4.051 1.297 4.051 3.586z"
+      /></svg
+    ><svg viewBox="0 0 26 26" id="play" xmlns="http://www.w3.org/2000/svg">
+      <path opacity=".01" d="M26 26H0V0h26z" />
+      <path
+        d="M8.667 17.56V8.44A1.907 1.907 0 019.75 6.716a2.275 2.275 0 012.394.281l5.525 4.561a1.907 1.907 0 010 2.882L12.144 19a2.275 2.275 0 01-2.394.282 1.907 1.907 0 01-1.083-1.722z"
+      />
+    </svg>
+  </svg>
+</div>
+
+  <div class="site-container">
+    <header class="header">
+  <div class="header__container container">
+    <a
+      href="./index.html"
+      class="header__logo logo link"
+      aria-label="Tweakful переход на главную страницу"
+    >
+      <svg
+        class="logo__svg"
+        width="51"
+        height="39"
+        viewBox="0 0 51 39"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M51 5V38.75L28.5 21.875L6 5L51 5Z"
+          fill="#46BA71"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0 33.75L0 0L22.5 16.875L45 33.75L0 33.75Z"
+          fill="#2E4FD7"
+        />
+      </svg>
+      Tweakful
+    </a>
+    <nav class="header__nav nav burger-menu">
+      <ul class="list-reset nav__list nav__list--burger list-reset">
+        <li class="nav__item">
+          <a
+            href="./index.html"
+            class="nav__link link"
+            aria-label="Переход на страницу Home"
+            >Home</a
+          >
+        </li>
+        <li class="nav__item">
+          <a
+            href="#"
+            class="nav__link link"
+            aria-label="Переход на страницу Features"
+            >Features</a
+          >
+        </li>
+        <li class="nav__item">
+          <a
+            href="#"
+            class="nav__link link"
+            aria-label="Переход на страницу Pricing"
+            >Pricing</a
+          >
+        </li>
+        <li class="nav__item">
+          <a
+            href="./aboutus.html"
+            class="nav__link link"
+            aria-label="Переход на страницу About Us"
+            >About Us</a
+          >
+        </li>
+        <li class="nav__item">
+          <a
+            href="#"
+            class="nav__link link"
+            aria-label="Переход на страницу Help"
+            >Help</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="header__content">
+      <button
+        class="burger btn-reset"
+        aria-label="Открыть бургер меню"
+        aria-expanded="false"
+        data-burger
+        id="burger"
+      >
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      <a
+        href="./contact.html"
+        class="header__link link next-link"
+        aria-label="Переход на страницу Book A Meeting"
+      >
+        Book A Meeting
+        <svg class="svg svg-next">
+          <use xlink:href="#next"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+    <section class="hero section">
+  <div class="hero__container container">
+    <div class="hero__content">
+      <div class="hero__left">
+        <h1 class="hero__title title-1">
+          This headline is the gist of the Your whole Website
+        </h1>
+        <p class="hero__text text-big">
+          And the description of hero section is follow up message after the
+          punch of a great headline. So, make it short, simple, descriptive and
+          to the point.
+        </p>
+        <div class="hero__navigation">
+          <a
+            href="./contact.html"
+            class="hero__link link next-link"
+            aria-label="Переход на страницу Book A Meeting"
+          >
+            Book A Meeting
+            <svg class="svg svg-next">
+              <use xlink:href="#next"></use>
+            </svg>
+          </a>
+          <p class="hero__text text-normal">
+            Here you can put secondary action statement & CTA
+          </p>
+        </div>
+        <div class="hero__partners partners">
+          <ul class="partners__list list-reset">
+            <li class="partners__item">
+              <a
+                href="#"
+                class="partners__link link"
+                aria-label="Переход на сайт партнёра logitech.com"
+              >
+                <svg class="partners__svg svg">
+                  <use xlink:href="#logit"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="partners__item">
+              <a
+                href="#"
+                class="partners__link link"
+                aria-label="Переход на сайт партнёра google.com"
+              >
+                <svg class="partners__svg svg">
+                  <use xlink:href="#google"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="partners__item">
+              <a
+                href="#"
+                class="partners__link link"
+                aria-label="Переход на сайт партнёра amazon.com"
+              >
+                <svg class="partners__svg svg">
+                  <use xlink:href="#amazon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero__right">
+        <picture>
+          <source srcset="./img/desct/Imagegerl.webp" type="image/webp" />
+          <img
+            class="img"
+            src="./img/desct/Imagegerl.png"
+            alt="Улыбающаяся девушка"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="info section">
+  <div class="info__container container">
+    <div class="info__content">
+      <ul class="info__list business-list list-reset">
+        <li class="business-list__item bg-1">
+          <h3 class="business-list__title title-3">First Benefit</h3>
+          <p class="business-list__text text-normal">
+            Gorgeous, high-quality design system for mobile, tablet & desktop
+            devices a few
+          </p>
+        </li>
+        <li class="business-list__item bg-2">
+          <h3 class="business-list__title title-3">Second Benefit</h3>
+          <p class="business-list__text text-normal">
+            Gorgeous, high-quality design system for mobile, tablet & desktop
+            devices a few
+          </p>
+        </li>
+        <li class="business-list__item bg-3">
+          <h3 class="business-list__title title-3">Third Benefit</h3>
+          <p class="business-list__text text-normal">
+            Gorgeous, high-quality design system for mobile, tablet & desktop
+            devices a few
+          </p>
+        </li>
+      </ul>
+      <div class="info__block">
+        <h2 class="info__title title-2">
+          Headline of Modern and Digital Lending Platform Seconds
+        </h2>
+        <p class="info__text text-big">
+          Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital
+          lending strategy
+        </p>
+        <a
+          href="./contact.html"
+          class="info__link link next-link"
+          aria-label="Переход на страницу Book A Meeting"
+        >
+          Learn More About
+          <svg class="svg svg-next">
+            <use xlink:href="#next"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="work section">
+  <div class="work__container container">
+    <h2 class="work__title title-2">Benefits of working with us</h2>
+    <ul class="work__list business-list list-reset">
+      <li class="business-list__item business-list__item--pad bg-4">
+        <h3 class="business-list__title title-3">Time zones ain’t no thing</h3>
+        <p class="business-list__text text-normal">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed
+          nam sem tellus erat.
+        </p>
+      </li>
+      <li class="business-list__item business-list__item--pad bg-5">
+        <h3 class="business-list__title title-3">Second Benefit</h3>
+        <p class="business-list__text text-normal">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed
+          nam sem tellus erat.
+        </p>
+      </li>
+      <li class="business-list__item business-list__item--pad bg-6">
+        <h3 class="business-list__title title-3">Third Benefit</h3>
+        <p class="business-list__text text-normal">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed
+          nam sem tellus erat.
+        </p>
+      </li>
+      <li class="business-list__item business-list__item--pad bg-7">
+        <h3 class="business-list__title title-3">Third Benefit</h3>
+        <p class="business-list__text text-normal">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed
+          nam sem tellus erat.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="story section">
+  <h2 style="display: none">story</h2>
+  <div class="story__container container">
+    <div class="story__swiper swiper mySwiper">
+      <ul class="story__swiper-wrapper swiper-wrapper list-reset">
+        <li class="story__swiper-slide swiper-slide">
+          <article class="story__article">
+            <div class="story__left">
+              <h2 class="story__title title-2">Success Story</h2>
+              <p class="story__text text-normal">
+                Nowadays, it isn’t uncommon to see lenders rapidly adopting a
+                digital lending strategy to streamline the lending process
+              </p>
+              <a
+                href="#"
+                class="story__link link link-partners"
+                aria-label="Переход на страницу партнера logitech.com"
+              >
+                <svg class="story__svg svg">
+                  <use xlink:href="#logit"></use>
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="story__link link story__link--bc"
+                aria-label="Переход на страницу Read Complete Case Study"
+              >
+                Read Complete Case Study
+                <svg class="svg svg-next">
+                  <use xlink:href="#next"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="story__right">
+              <picture>
+                <source srcset="./img/desct/gerl2.webp" type="image/webp" />
+                <img
+                  class="img"
+                  loading="lazy"
+                  src="./img/desct/gerl2."
+                  class="image"
+                  alt="Наш партнёр"
+                />
+              </picture>
+            </div>
+          </article>
+        </li>
+        <li class="story__swiper-slide swiper-slide">
+          <article class="story__article">
+            <div class="story__left">
+              <h2 class="story__title title-2">Success Story</h2>
+              <p class="story__text text-normal">
+                Nowadays, it isn’t uncommon to see lenders rapidly adopting a
+                digital lending strategy to streamline the lending process
+              </p>
+              <a
+                href="#"
+                class="story__link link link-partners"
+                aria-label="Переход на страницу партнера logitech.com"
+              >
+                <svg class="story__svg svg">
+                  <use xlink:href="#logit"></use>
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="story__link link story__link--bc"
+                aria-label="Переход на страницу Read Complete Case Study"
+              >
+                Read Complete Case Study
+                <svg class="svg svg-next">
+                  <use xlink:href="#next"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="story__right">
+              <picture>
+                <source srcset="./img/desct/gerl2.webp" type="image/webp" />
+                <img
+                  class="img"
+                  loading="lazy"
+                  src="./img/desct/gerl2."
+                  class="image"
+                  alt="Наш партнёр"
+                />
+              </picture>
+            </div>
+          </article>
+        </li>
+        <li class="story__swiper-slide swiper-slide">
+          <article class="story__article">
+            <div class="story__left">
+              <h2 class="story__title title-2">Success Story</h2>
+              <p class="story__text text-normal">
+                Nowadays, it isn’t uncommon to see lenders rapidly adopting a
+                digital lending strategy to streamline the lending process
+              </p>
+              <a
+                href="#"
+                class="story__link link link-partners"
+                aria-label="Переход на страницу партнера logitech.com"
+              >
+                <svg class="story__svg svg">
+                  <use xlink:href="#logit"></use>
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="story__link link story__link--bc"
+                aria-label="Переход на страницу Read Complete Case Study"
+              >
+                Read Complete Case Study
+                <svg class="svg svg-next">
+                  <use xlink:href="#next"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="story__right">
+              <picture>
+                <source srcset="./img/desct/gerl2.webp" type="image/webp" />
+                <img
+                  class="img"
+                  loading="lazy"
+                  src="./img/desct/gerl2."
+                  class="image"
+                  alt="Наш партнёр"
+                />
+              </picture>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <div class="story__navigation">
+        <div class="story__swiper-pagination swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="process section">
+  <div class="process__container container">
+    <h2 class="process__title title-2">The process we follow</h2>
+    <ul class="process__list business-list list-reset">
+      <li class="business-list__item business-list__item--top">
+        <h3 class="business-list__title title-3">Ideate</h3>
+        <p class="business-list__text text-normal">
+          Turn your idea from concept to MVP
+        </p>
+      </li>
+      <li class="business-list__item business-list__item--top">
+        <h3 class="business-list__title title-3">Design</h3>
+        <p class="business-list__text text-normal">
+          Sketch out the product to align the user needs
+        </p>
+      </li>
+      <li class="business-list__item business-list__item--top">
+        <h3 class="business-list__title title-3">Develop</h3>
+        <p class="business-list__text text-normal">
+          Convert the designs into a live application
+        </p>
+      </li>
+      <li class="business-list__item business-list__item--finish">
+        <h3 class="business-list__title title-3">Deploy</h3>
+        <p class="business-list__text text-normal">
+          Launching the application to the market
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="partner section">
+  <div class="partner__container container">
+    <div class="partner__content">
+      <h2 class="partner__title title-2">
+        The Is Closing Headline To Make A Impact For Call To Action
+      </h2>
+      <p class="partner__text text-normal">
+        Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital
+        lending strategy to streamline the lending process nowadays, it isn’t
+        uncommon to see lenders rapidly
+      </p>
+      <a
+        href="#"
+        class="partner__link link next-link"
+        aria-label="Переход на страницу Learn More About"
+      >
+        Learn More About
+        <svg class="svg svg-next">
+          <use xlink:href="#next"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="partner__partners partners">
+      <ul class="partners__list partners__list--flex list-reset list-reset">
+        <li class="partners__item">
+          <a
+            href="#"
+            class="partners__link link"
+            aria-label="Переход на сайт партнёра philips.com"
+          >
+            <svg class="partners__svg svg">
+              <use xlink:href="#philips"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="partners__item partners__item--width">
+          <a
+            href="#"
+            class="partners__link link"
+            aria-label="Переход на сайт партнёра logitech.com"
+          >
+            <svg class="partners__svg svg">
+              <use xlink:href="#logit"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="partners__item partners__item--width partners__item--centr">
+          <a
+            href="#"
+            class="partners__link link"
+            aria-label="Переход на сайт партнёра amazon.com"
+          >
+            <svg class="partners__svg svg">
+              <use xlink:href="#amazon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="partners__item partners__item--width">
+          <a
+            href="#"
+            class="partners__link link"
+            aria-label="Переход на сайт партнёра facebook.com"
+          >
+            <svg class="partners__svg svg">
+              <use xlink:href="#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="partners__item partners__item--width">
+          <a
+            href="#"
+            class="partners__link link"
+            aria-label="Переход на сайт партнёра google.com"
+          >
+            <svg class="partners__svg svg">
+              <use xlink:href="#google"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="partners__item partners__item--width">
+          <a
+            href="#"
+            class="partners__link link"
+            aria-label="Переход на сайт партнёра linkedin.com"
+          >
+            <svg class="partners__svg svg">
+              <use xlink:href="#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__top">
+      <div class="footer__left">
+        <a
+          href="./index.html"
+          class="footer__logo logo link"
+          aria-label="Переход на главную страницу"
+          >Tweakful</a
+        >
+        <h2 class="footer__title title-3">About Tweakful</h2>
+        <p class="footer__text text-normal">
+          Tweakful is HubSpot Theme Based On Engagement Design Framework,
+          designed & developed by Openthrive.
+        </p>
+        <a
+          href="./contact.html"
+          class="footer__link link next-link"
+          aria-label="Забронируйте встречу со специалистом"
+        >
+          Book A Meeting
+          <svg class="svg svg-next">
+            <use xlink:href="#next"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer__right">
+        <nav class="footer__nav nav" title="">
+          <ul class="nav__list list-reset nav__list--end list-reset">
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link link"
+                aria-label="Переход на страницу Contact"
+                >Contact</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link link"
+                aria-label="Переход на страницу Career"
+                >Career</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link link"
+                aria-label="Переход на страницу Privacy Plocy"
+                >Privacy Plocy</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link link"
+                aria-label="Переход на страницу Terms Of Services"
+                >Terms Of Services</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link link"
+                aria-label="Переход на страницу GDPR"
+                >GDPR</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link link"
+                aria-label="Переход на страницу FAQs"
+                >FAQs</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer__nav nav" title="">
+          <ul class="nav__list list-reset nav__list--end list-reset">
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link link"
+                aria-label="Переход на страницу Blog"
+                >Blog</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link link"
+                aria-label="Переход на страницу Capabilities"
+                >Capabilities</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link link"
+                aria-label="Переход на страницу Resources"
+                >Resources</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link link"
+                aria-label="Переход на страницу Partnership  Integration"
+                >Partnership Integration</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span class="footer__span"
+        >B2B website and engagement design solution that transform marketing and
+        sales performance like never before.</span
+      >
+      <span class="footer__span"
+        >© 2015-2020 Openthrive. All right reserved</span
+      >
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
